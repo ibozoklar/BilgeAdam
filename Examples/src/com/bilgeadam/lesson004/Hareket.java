@@ -109,9 +109,6 @@ public class Hareket {
 
 				}
 
-//				str = str.substring(0, index - 1) + " . " + str.substring(index + 2, index + ((2 * n) + 1)) + "* "
-//						+ str.substring(index + ((2 * n) + 3));
-
 			}
 
 		}
