@@ -28,7 +28,7 @@ public class Question48 {
 //		plakalarıYazdır();
 //		plakaBul("Ankara", "Bolu", "Kars");
 
-		//String[] yeniDizi = sesliHarfleriSil();
+		// String[] yeniDizi = sesliHarfleriSil();
 		// String[] deneme = { "Cankiri", "Tarik", "Erzincan" };
 
 		ilkUcHarf(iller);
@@ -75,9 +75,7 @@ public class Question48 {
 			} else {
 				System.out.println(dizi[i] + "...");
 			}
-
 		}
-
 	}
 
 	public static String[] sesliHarfleriSil() {
