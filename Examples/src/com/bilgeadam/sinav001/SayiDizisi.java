@@ -49,37 +49,7 @@ public class SayiDizisi {
 
 	public void sil(int sayi) {
 
-//		boolean sayiVarMi = false;
-//		String strsayi = String.valueOf(sayi);
-//		String str = "";
-//
-//		for (int i = 0; i < dizi.length; i++) {
-//
-//			str += dizi[i] + ",";
-//		}
-//		String[] strsayilar1 = str.split(",");
-//		int[] sayilar1 = new int[strsayilar1.length];
-//		for (int t = 0; t < strsayilar1.length; t++) {
-//			sayilar1[t] = Integer.parseInt(strsayilar1[t]);
-//			if (sayi == sayilar1[t]) {
-//				sayiVarMi = true;
-//			}
-//		}
-//
-//		if (sayiVarMi) {
-//			for (int t = 0; t < strsayilar1.length; t++) {
-//
-//				sayilar1[t] = Integer.parseInt(strsayilar1[t]);
-//
-//			}
-//			dizi = sayilar1;
-//
-//		} else {
-//
-//			System.out.println("Lutfen var olan bi sayiyi silmeye calisin");
-//		}
-
-//*********************************************************		
+		boolean sayiVarMi = false;
 		String strsayi = String.valueOf(sayi);
 		String str = "";
 
@@ -87,18 +57,56 @@ public class SayiDizisi {
 
 			str += dizi[i] + ",";
 		}
-
-		int index = str.indexOf(strsayi);
-		str = str.substring(0, index) + str.substring(index + 2);
-
-		String[] strsayilar = str.split(",");
-		int[] sayilar = new int[strsayilar.length];
-		for (int t = 0; t < strsayilar.length; t++) {
-
-			sayilar[t] = Integer.parseInt(strsayilar[t]);
-
+		String[] strsayilar1 = str.split(",");
+		int[] sayilar1 = new int[strsayilar1.length];
+		for (int t = 0; t < strsayilar1.length; t++) {
+			sayilar1[t] = Integer.parseInt(strsayilar1[t]);
+			if (sayi == sayilar1[t]) {
+				sayiVarMi = true;
+				break;
+			}
 		}
-		dizi = sayilar;
+
+		if (sayiVarMi) {
+
+			int index = str.indexOf(strsayi);
+			str = str.substring(0, index) + str.substring(index + 2);
+
+			String[] strsayilar2 = str.split(",");
+			int[] sayilar2 = new int[strsayilar2.length];
+
+			for (int t = 0; t < strsayilar2.length; t++) {
+
+				sayilar2[t] = Integer.parseInt(strsayilar2[t]);
+
+			}
+			dizi = sayilar2;
+
+		} else {
+
+			System.err.println("Lutfen var olan bi sayiyi silmeye calisin");
+		}
+
+//*********************************************************		
+//		String strsayi = String.valueOf(sayi);
+//		String str = "";
+//
+//		for (int i = 0; i < dizi.length; i++) {
+//
+//			str += dizi[i] + ",";
+//		}
+//
+//		int index = str.indexOf(strsayi);
+//		str = str.substring(0, index) + str.substring(index + 2);
+//
+//		String[] strsayilar = str.split(",");
+//		int[] sayilar = new int[strsayilar.length];
+//		for (int t = 0; t < strsayilar.length; t++) {
+//
+//			sayilar[t] = Integer.parseInt(strsayilar[t]);
+//
+//		}
+//		dizi = sayilar;
 
 	}
 

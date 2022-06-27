@@ -18,10 +18,11 @@ public class Main {
 		SayiDizisi dizi = new SayiDizisi();
 		dizi.ekle(2);
 		dizi.ekle(1);
-		dizi.sil(1);
+//		dizi.sil(1);
 		dizi.ekle(10);
 		dizi.ekle(33);
 		dizi.arayaEkle(2, 123);
+		dizi.sil(123);
 		dizi.sil(123);
 
 //		dizi.ekle(3);
