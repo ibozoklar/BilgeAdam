@@ -24,7 +24,7 @@ public class Main {
 		builder = entityManager.getCriteriaBuilder();
 
 		// makaleBosOlanlar();
-		enCokIcerikUretenKullanici();
+		// enCokIcerikUretenKullanici();
 
 	}
 

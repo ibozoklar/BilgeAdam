@@ -128,13 +128,4 @@ public class IMPL {
 		ss.close();
 	}
 
-	public static void main(String[] args) {
-
-		IMPLData();
-
-		entityManager = HibernateUtils.getSessionFactory().createEntityManager();
-		builder = entityManager.getCriteriaBuilder();
-
-	}
-
 }
